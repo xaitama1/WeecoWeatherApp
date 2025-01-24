@@ -1,0 +1,171 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #007bff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: color 0.5s;
+}
+
+body:hover {
+  color: #000000;
+}
+
+/* Header Styling */
+h1,
+h2 {
+  color: #e4e4e4;
+  transition: color 0.75s;
+}
+
+h1 {
+  font-size: 6rem; /* Increased size for WEECO */
+  animation: colorChange 3s infinite, bgChange 5s infinite;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 2.5rem; /* Increased size for subtitle */
+  margin-bottom: 30px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #f7f379;
+  }
+  50% {
+    color: #007bff;
+  }
+  100% {
+    color: #f7f379;
+  }
+}
+
+@keyframes bgChange {
+  0% {
+    background-color: #ffffff00;
+  }
+  50% {
+    background-color: #ffffff00;
+  }
+  100% {
+    background-color: #ffffff00;
+  }
+}
+
+/* Form Styling */
+form {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 500px; /* Wider form */
+  background: #ffffff00;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px hsla(0, 0%, 0%, 0);
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 15px;
+  font-size: 1.5rem; /* Bigger input text */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px; /* Bigger button */
+  font-size: 1.5rem; /* Larger button text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #f7f379;
+  color: rgb(255, 179, 0);
+}
+
+/* Weather Report Styling */
+h2 {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 2rem; /* Bigger paragraphs */
+  margin: 20px 0;
+}
+
+/* Back Link Styling */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f7f379;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem; /* Bigger back link */
+}
+
+a:hover {
+  color: rgb(255, 179, 0);
+}
+
+/* Video Background Styling */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensures video stays behind the content */
+  object-fit: cover; /* Makes the video cover the entire screen */
+}
+
+/* Content Styling */
+.content {
+  position: relative;
+  z-index: 1; /* Keeps content above the video */
+  text-align: center;
+  color: white; /* Ensures text is readable on the video */
+}
+
+h1,
+h2,
+p,
+a {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
+}
+
+/* Additional Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Volume Slider Styling */
+#volume-control-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#volume-control-container label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+#volume-control {
+  width: 150px;
+}
